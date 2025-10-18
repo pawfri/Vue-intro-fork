@@ -1,8 +1,9 @@
 const app = Vue.createApp({
-    data: function() {
+    data() {
         return {
             product: 'Socks',
-            description: 'The socks are nice and warm'
+            image: './assets/images/socks_green.jpg',
+            url: 'https://www.google.com/'
         }
     }
 })
