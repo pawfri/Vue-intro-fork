@@ -35,6 +35,7 @@
               :style="{ backgroundColor: variant.color}">
             </div>
             <button class="button"
+            :class="{ disabledButton: !inStock}"
             :disabled="!inStock"
             @click="addToCart">Add to Cart</button>
           </div>
