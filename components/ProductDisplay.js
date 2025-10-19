@@ -18,6 +18,7 @@ app.component('product-display', {
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
             
+            <p>Shipping: {{ shipping }}</p>
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
@@ -64,5 +65,11 @@ app.component('product-display', {
         inStock() {
             return this.variants[this.selectedVariant].quantity
         },
+        shipping() {
+            if (this.premium) {
+                return 'Free'
+            }
+            return 2.99
+        }
     }
 })
