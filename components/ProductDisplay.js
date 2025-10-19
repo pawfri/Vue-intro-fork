@@ -29,7 +29,6 @@ app.component('product.display' {
       </div>`,
           data() {
         return {
-            cart: 0,
             product: 'Socks',
             brand: 'Vue Mastery',
             selectedVariant: 0,
