@@ -21,4 +21,5 @@ const app = Vue.createApp({
         //     this.cart.pop(id)         
         // }
     }
-})
+  })
+  
