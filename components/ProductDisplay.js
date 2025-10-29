@@ -54,7 +54,7 @@ app.component('product-display', {
           { id: 2234, color: 'green', image: './assets/images/socks_green.jpg', quantity: 50 },
           { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg', quantity: 0 },
         ],
-        reivews: []
+        reviews: []
     }
   },
   methods: {
